@@ -10,9 +10,14 @@ export default function Login() {
        const navigate = useNavigate();
        const collectData = () => {
               console.log(name, password);
-              setname(" ");
-              setpassword(" ");
-              navigate("/home");
+              // setname(" ");
+              // setpassword(" ");
+              if(name==="foo" && password==="bar"){
+                     navigate("/home");
+              }
+              else{
+                     alert('enter correct info!')
+              }
        }
 
        return (<div>
@@ -32,3 +37,4 @@ export default function Login() {
                </div>
        )
 }
+
