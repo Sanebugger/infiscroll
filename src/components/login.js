@@ -12,12 +12,10 @@ export default function Login() {
               console.log(name, password);
               // setname(" ");
               // setpassword(" ");
-              if(name==="foo" && password==="bar"){
-                     navigate("/home");
-              }
-              else{
-                     alert('enter correct info!')
-              }
+         
+              navigate("/home");
+           
+             
        }
 
        return (<div>
